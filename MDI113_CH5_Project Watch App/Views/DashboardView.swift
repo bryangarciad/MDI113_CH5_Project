@@ -14,6 +14,16 @@ struct DashboardView: View {
                             gradientColors: [.blue, .cyan]
                         )
                     }
+
+                    // Simulated Data Card
+                    NavigationLink(destination: SimulatedMotionView()) {
+                        DashboardCard(
+                            icon: "waveform.path.ecg",
+                            title: "Simulated Filter",
+                            subtitle: "Raw vs Smoothed",
+                            gradientColors: [.purple, .pink]
+                        )
+                    }
                 }
             }
         }
