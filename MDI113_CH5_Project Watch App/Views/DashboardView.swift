@@ -24,6 +24,16 @@ struct DashboardView: View {
                             gradientColors: [.purple, .pink]
                         )
                     }
+                    
+                    // Audio Record Card
+                    NavigationLink(destination: AudioRecorderView()) {
+                        DashboardCard(
+                            icon: "mic.fill",
+                            title: "Voice Notes",
+                            subtitle: "Record Audio",
+                            gradientColors: [.purple, .indigo]
+                        )
+                    }
                 }
             }
         }
